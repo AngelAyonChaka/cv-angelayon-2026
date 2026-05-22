@@ -1,349 +1,414 @@
-echo '<!DOCTYPE html><html><head><title>Angel Ayon - Portfolio</title></head><body><h1>🚀 Proyecto listo!</h1></body></html>' > index.htmlhtml_code = '''<!DOCTYPE html>
+<!doctype html>
 <html lang="es" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Angel Yair Ayon Verdugo - Desarrollador Full Stack Senior | Portfolio profesional">
-<title>Angel Ayon | Desarrollador Full Stack</title>
-<link rel="stylesheet" href="css/styles.css">
-<!-- Iconos de tecnologías y redes sociales -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Angel Yair Ayon Verdugo - Desarrollador Full Stack Senior | Portfolio profesional"
+    />
+    <title>Angel Ayon | Desarrollador Full Stack</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Iconos de tecnologías y redes sociales -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">&lt;AA /&gt;</a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">Sobre mí</a></li>
+          <li><a href="#experience" class="nav-link">Experiencia</a></li>
+          <li><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li><a href="#projects" class="nav-link">Proyectos</a></li>
+          <li><a href="#education" class="nav-link">Educación</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-actions">
+          <!-- Theme Toggle -->
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Cambiar tema"
+          >
+            <i class="fas fa-moon" id="theme-icon"></i>
+          </button>
+          <!-- Hamburger Menu -->
+          <button class="hamburger" id="hamburger" aria-label="Menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-<!-- ========== NAVBAR ========== -->
-<nav class="navbar" id="navbar">
-<div class="nav-container">
-<a href="#hero" class="nav-logo">&lt;AA /&gt;</a>
-<ul class="nav-menu" id="nav-menu">
-<li><a href="#about" class="nav-link">Sobre mí</a></li>
-<li><a href="#experience" class="nav-link">Experiencia</a></li>
-<li><a href="#skills" class="nav-link">Habilidades</a></li>
-<li><a href="#projects" class="nav-link">Proyectos</a></li>
-<li><a href="#education" class="nav-link">Educación</a></li>
-<li><a href="#contact" class="nav-link">Contacto</a></li>
-</ul>
-<div class="nav-actions">
-<!-- Theme Toggle -->
-<button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
-<i class="fas fa-moon" id="theme-icon"></i>
-</button>
-<!-- Hamburger Menu -->
-<button class="hamburger" id="hamburger" aria-label="Menú">
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
-</button>
-</div>
-</div>
-</nav>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-greeting">Hola, soy</p>
+        <h1 class="hero-name">Angel Yair Ayon Verdugo</h1>
+        <h2 class="hero-title">Desarrollador Full Stack Senior</h2>
+        <p class="hero-description">
+          Enfocado en la implementación de arquitecturas modernas y la mejora
+          continua de procesos técnicos, combinando capacidad analítica con
+          liderazgo técnico para entregar productos de software de alto impacto.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://drive.google.com/TU-CV-LINK"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="fas fa-file-alt"></i> Ver CV
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contacto
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a
+            href="https://linkedin.com/in/tu-perfil"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/tu-usuario"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:angelayon.dev01@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about"><i class="fas fa-chevron-down"></i></a>
+      </div>
+    </section>
 
-<!-- ========== HERO ========== -->
-<section class="hero" id="hero">
-<div class="hero-content">
-<p class="hero-greeting">Hola, soy</p>
-<h1 class="hero-name">Angel Yair Ayon Verdugo</h1>
-<h2 class="hero-title">Desarrollador Full Stack Senior</h2>
-<p class="hero-description">
-Enfocado en la implementación de arquitecturas modernas y la mejora continua
-de procesos técnicos, combinando capacidad analítica con liderazgo técnico
-para entregar productos de software de alto impacto.
-</p>
-<div class="hero-actions">
-<a href="https://drive.google.com/TU-CV-LINK" target="_blank" class="btn btn-primary">
-<i class="fas fa-file-alt"></i> Ver CV
-</a>
-<a href="#contact" class="btn btn-outline">
-<i class="fas fa-envelope"></i> Contacto
-</a>
-</div>
-<div class="hero-socials">
-<a href="https://linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn">
-<i class="fab fa-linkedin"></i>
-</a>
-<a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub">
-<i class="fab fa-github"></i>
-</a>
-<a href="mailto:angelayon.dev01@gmail.com" aria-label="Email">
-<i class="fas fa-envelope"></i>
-</a>
-</div>
-</div>
-<div class="hero-scroll">
-<a href="#about"><i class="fas fa-chevron-down"></i></a>
-</div>
-</section>
+    <!-- ========== SOBRE MÍ ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-content">
+          <p>
+            Desarrollador Senior con amplia trayectoria en el desarrollo de
+            software empresarial. Tengo experiencia en desarrollo End-to-End,
+            implementando funcionalidades críticas en plataformas web,
+            asegurando la integridad y seguridad en el manejo de datos
+            sensibles.
+          </p>
+          <p>
+            Cuento con experiencia en empaquetado de aplicaciones con Docker,
+            gestión de despliegues en infraestructura de nube, administración
+            avanzada de repositorios de código y automatización de flujos de
+            integración y entrega continua (CI/CD).
+          </p>
+          <p>
+            Colaboro activamente en equipos de alto rendimiento mediante ciclos
+            de entrega incremental, metodologías ágiles (Scrum) y mejora
+            continua. También tengo experiencia en la implementación activa de
+            IA Generativa y Agentes Autónomos para la optimización de flujos de
+            trabajo.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!-- ========== SOBRE MÍ ========== -->
-<section class="section" id="about">
-<div class="container">
-<h2 class="section-title">Sobre mí</h2>
-<div class="about-content">
-<p>
-Desarrollador Senior con amplia trayectoria en el desarrollo de software empresarial.
-Tengo experiencia en desarrollo End-to-End, implementando funcionalidades críticas
-en plataformas web, asegurando la integridad y seguridad en el manejo de datos sensibles.
-</p>
-<p>
-Cuento con experiencia en empaquetado de aplicaciones con Docker, gestión de despliegues
-en infraestructura de nube, administración avanzada de repositorios de código y
-automatización de flujos de integración y entrega continua (CI/CD).
-</p>
-<p>
-Colaboro activamente en equipos de alto rendimiento mediante ciclos de entrega incremental,
-metodologías ágiles (Scrum) y mejora continua. También tengo experiencia en la implementación
-activa de IA Generativa y Agentes Autónomos para la optimización de flujos de trabajo.
-</p>
-</div>
-</div>
-</section>
+    <!-- ========== EXPERIENCIA ========== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2 class="section-title">Experiencia Profesional</h2>
+        <div class="timeline">
+          <!-- Afore Coppel -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Programador Full Stack</h3>
+                <span class="timeline-date">2025 - Actual</span>
+              </div>
+              <h4 class="timeline-company">Afore Coppel</h4>
+              <ul class="timeline-details">
+                <li>
+                  Desarrollo End-to-End: Implementación de funcionalidades
+                  críticas en la plataforma web, asegurando la integridad y
+                  seguridad en el manejo de datos sensibles.
+                </li>
+                <li>
+                  Contenedores y Nube: Empaquetado de aplicaciones y gestión de
+                  despliegues en infraestructura de nube.
+                </li>
+                <li>
+                  Control de Versiones y CI/CD: Administración avanzada de
+                  repositorios y automatización de flujos de integración y
+                  entrega continua.
+                </li>
+                <li>
+                  Cultura Ágil: Colaboración en equipos de alto rendimiento
+                  mediante ciclos de entrega incremental y mejora continua.
+                </li>
+              </ul>
+            </div>
+          </div>
 
-<!-- ========== EXPERIENCIA ========== -->
-<section class="section section-alt" id="experience">
-<div class="container">
-<h2 class="section-title">Experiencia Profesional</h2>
-<div class="timeline">
+          <!-- NexGen Systems -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Desarrollador Web Jr.</h3>
+                <span class="timeline-date">2025</span>
+              </div>
+              <h4 class="timeline-company">NexGen Systems</h4>
+              <ul class="timeline-details">
+                <li>
+                  Desarrollo y mejora del sistema interno de la empresa
+                  utilizando React, Ruby on Rails, MySQL, entre otras
+                  herramientas para backend y frontend.
+                </li>
+              </ul>
+            </div>
+          </div>
 
-<!-- Afore Coppel -->
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>Programador Full Stack</h3>
-<span class="timeline-date">2025 - Actual</span>
-</div>
-<h4 class="timeline-company">Afore Coppel</h4>
-<ul class="timeline-details">
-<li>Desarrollo End-to-End: Implementación de funcionalidades críticas en la plataforma web, asegurando la integridad y seguridad en el manejo de datos sensibles.</li>
-<li>Contenedores y Nube: Empaquetado de aplicaciones y gestión de despliegues en infraestructura de nube.</li>
-<li>Control de Versiones y CI/CD: Administración avanzada de repositorios y automatización de flujos de integración y entrega continua.</li>
-<li>Cultura Ágil: Colaboración en equipos de alto rendimiento mediante ciclos de entrega incremental y mejora continua.</li>
-</ul>
-</div>
-</div>
+          <!-- Santa María de la Luz -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Programador Jr.</h3>
+                <span class="timeline-date">2024</span>
+              </div>
+              <h4 class="timeline-company">Santa María de la Luz Funeraria</h4>
+              <ul class="timeline-details">
+                <li>
+                  Implementación de nuevas funcionalidades en el sistema,
+                  optimizando procesos internos.
+                </li>
+              </ul>
+            </div>
+          </div>
 
-<!-- NexGen Systems -->
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>Desarrollador Web Jr.</h3>
-<span class="timeline-date">2025</span>
-</div>
-<h4 class="timeline-company">NexGen Systems</h4>
-<ul class="timeline-details">
-<li>Desarrollo y mejora del sistema interno de la empresa utilizando React, Ruby on Rails, MySQL, entre otras herramientas para backend y frontend.</li>
-</ul>
-</div>
-</div>
+          <!-- FIC y FCFM UAS -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Practicante</h3>
+                <span class="timeline-date">2024</span>
+              </div>
+              <h4 class="timeline-company">
+                FIC y FCFM - Universidad Autónoma de Sinaloa
+              </h4>
+              <ul class="timeline-details">
+                <li>
+                  Actualización y mantenimiento de la página web de las
+                  facultades.
+                </li>
+                <li>
+                  Desarrollo de sistema interno para la administración de
+                  créditos estudiantiles.
+                </li>
+                <li>
+                  Diagnóstico y solución de problemas técnicos en sistemas
+                  operativos y software.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- Santa María de la Luz -->
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>Programador Jr.</h3>
-<span class="timeline-date">2024</span>
-</div>
-<h4 class="timeline-company">Santa María de la Luz Funeraria</h4>
-<ul class="timeline-details">
-<li>Implementación de nuevas funcionalidades en el sistema, optimizando procesos internos.</li>
-</ul>
-</div>
-</div>
+    <!-- ========== HABILIDADES ========== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <i class="fas fa-code"></i>
+              <h3>Lenguajes</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">HTML5</span>
+            </div>
+          </div>
 
-<!-- FIC y FCFM UAS -->
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>Practicante</h3>
-<span class="timeline-date">2024</span>
-</div>
-<h4 class="timeline-company">FIC y FCFM - Universidad Autónoma de Sinaloa</h4>
-<ul class="timeline-details">
-<li>Actualización y mantenimiento de la página web de las facultades.</li>
-<li>Desarrollo de sistema interno para la administración de créditos estudiantiles.</li>
-<li>Diagnóstico y solución de problemas técnicos en sistemas operativos y software.</li>
-</ul>
-</div>
-</div>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Ruby on Rails</span>
+            </div>
+          </div>
 
-</div>
-</div>
-</section>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Frontend & Mobile</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Tailwind CSS</span>
+            </div>
+          </div>
 
-<!-- ========== HABILIDADES ========== -->
-<section class="section" id="skills">
-<div class="container">
-<h2 class="section-title">Habilidades Técnicas</h2>
-<div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <i class="fas fa-database"></i>
+              <h3>Bases de Datos</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
 
-<div class="skill-category">
-<div class="skill-category-header">
-<i class="fas fa-code"></i>
-<h3>Lenguajes</h3>
-</div>
-<div class="skill-tags">
-<span class="skill-tag">JavaScript</span>
-<span class="skill-tag">TypeScript</span>
-<span class="skill-tag">Java</span>
-<span class="skill-tag">PHP</span>
-<span class="skill-tag">HTML5</span>
-</div>
-</div>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <i class="fas fa-cloud"></i>
+              <h3>DevOps & Tools</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">GitLab</span>
+              <span class="skill-tag">CI/CD</span>
+            </div>
+          </div>
 
-<div class="skill-category">
-<div class="skill-category-header">
-<i class="fas fa-server"></i>
-<h3>Backend</h3>
-</div>
-<div class="skill-tags">
-<span class="skill-tag">Spring Boot</span>
-<span class="skill-tag">Express.js</span>
-<span class="skill-tag">Laravel</span>
-<span class="skill-tag">Node.js</span>
-<span class="skill-tag">Ruby on Rails</span>
-</div>
-</div>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <i class="fas fa-robot"></i>
+              <h3>Inteligencia Artificial</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">IA Generativa</span>
+              <span class="skill-tag">Agentes Autónomos</span>
+              <span class="skill-tag">API OpenAI</span>
+              <span class="skill-tag">API Gemini</span>
+            </div>
+          </div>
 
-<div class="skill-category">
-<div class="skill-category-header">
-<i class="fas fa-laptop-code"></i>
-<h3>Frontend & Mobile</h3>
-</div>
-<div class="skill-tags">
-<span class="skill-tag">React</span>
-<span class="skill-tag">React Native</span>
-<span class="skill-tag">Vue.js</span>
-<span class="skill-tag">Angular</span>
-<span class="skill-tag">CSS3</span>
-<span class="skill-tag">Tailwind CSS</span>
-</div>
-</div>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <i class="fas fa-users"></i>
+              <h3>Metodologías & Soft Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Scrum</span>
+              <span class="skill-tag">Inglés B1</span>
+              <span class="skill-tag">Liderazgo Técnico</span>
+              <span class="skill-tag">Resolución de Problemas</span>
+              <span class="skill-tag">Trabajo Colaborativo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="skill-category">
-<div class="skill-category-header">
-<i class="fas fa-database"></i>
-<h3>Bases de Datos</h3>
-</div>
-<div class="skill-tags">
-<span class="skill-tag">PostgreSQL</span>
-<span class="skill-tag">MySQL</span>
-<span class="skill-tag">SQL Server</span>
-<span class="skill-tag">MongoDB</span>
-</div>
-</div>
+    <!-- ========== PROYECTOS ========== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Los proyectos se renderizan dinámicamente desde js/projects.js -->
+        </div>
+      </div>
+    </section>
 
-<div class="skill-category">
-<div class="skill-category-header">
-<i class="fas fa-cloud"></i>
-<h3>DevOps & Tools</h3>
-</div>
-<div class="skill-tags">
-<span class="skill-tag">Docker</span>
-<span class="skill-tag">Git</span>
-<span class="skill-tag">GitHub</span>
-<span class="skill-tag">GitLab</span>
-<span class="skill-tag">CI/CD</span>
-</div>
-</div>
+    <!-- ========== EDUCACIÓN ========== -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title">Educación</h2>
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-info">
+            <h3>Licenciatura en Informática</h3>
+            <h4>Universidad Autónoma de Sinaloa</h4>
+            <span class="education-date">2020 - 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="skill-category">
-<div class="skill-category-header">
-<i class="fas fa-robot"></i>
-<h3>Inteligencia Artificial</h3>
-</div>
-<div class="skill-tags">
-<span class="skill-tag">IA Generativa</span>
-<span class="skill-tag">Agentes Autónomos</span>
-<span class="skill-tag">API OpenAI</span>
-<span class="skill-tag">API Gemini</span>
-</div>
-</div>
+    <!-- ========== CONTACTO ========== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <p class="contact-text">
+          ¿Tienes un proyecto en mente o quieres colaborar? ¡No dudes en
+          contactarme!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:angelayon.dev01@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>angelayon.dev01@gmail.com</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/tu-perfil"
+            target="_blank"
+            class="contact-card"
+          >
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/tu-usuario"
+            target="_blank"
+            class="contact-card"
+          >
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="tel:+526672478101" class="contact-card">
+            <i class="fas fa-phone"></i>
+            <span>667 247 8101</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<div class="skill-category">
-<div class="skill-category-header">
-<i class="fas fa-users"></i>
-<h3>Metodologías & Soft Skills</h3>
-</div>
-<div class="skill-tags">
-<span class="skill-tag">Scrum</span>
-<span class="skill-tag">Inglés B1</span>
-<span class="skill-tag">Liderazgo Técnico</span>
-<span class="skill-tag">Resolución de Problemas</span>
-<span class="skill-tag">Trabajo Colaborativo</span>
-</div>
-</div>
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2025 Angel Yair Ayon Verdugo. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
 
-</div>
-</div>
-</section>
-
-<!-- ========== PROYECTOS ========== -->
-<section class="section section-alt" id="projects">
-<div class="container">
-<h2 class="section-title">Proyectos</h2>
-<div class="projects-grid" id="projects-grid">
-<!-- Los proyectos se renderizan dinámicamente desde js/projects.js -->
-</div>
-</div>
-</section>
-
-<!-- ========== EDUCACIÓN ========== -->
-<section class="section" id="education">
-<div class="container">
-<h2 class="section-title">Educación</h2>
-<div class="education-card">
-<div class="education-icon">
-<i class="fas fa-graduation-cap"></i>
-</div>
-<div class="education-info">
-<h3>Licenciatura en Informática</h3>
-<h4>Universidad Autónoma de Sinaloa</h4>
-<span class="education-date">2020 - 2025</span>
-</div>
-</div>
-</div>
-</section>
-
-<!-- ========== CONTACTO ========== -->
-<section class="section section-alt" id="contact">
-<div class="container">
-<h2 class="section-title">Contacto</h2>
-<p class="contact-text">
-¿Tienes un proyecto en mente o quieres colaborar? ¡No dudes en contactarme!
-</p>
-<div class="contact-links">
-<a href="mailto:angelayon.dev01@gmail.com" class="contact-card">
-<i class="fas fa-envelope"></i>
-<span>angelayon.dev01@gmail.com</span>
-</a>
-<a href="https://linkedin.com/in/tu-perfil" target="_blank" class="contact-card">
-<i class="fab fa-linkedin"></i>
-<span>LinkedIn</span>
-</a>
-<a href="https://github.com/tu-usuario" target="_blank" class="contact-card">
-<i class="fab fa-github"></i>
-<span>GitHub</span>
-</a>
-<a href="tel:+526672478101" class="contact-card">
-<i class="fas fa-phone"></i>
-<span>667 247 8101</span>
-</a>
-</div>
-</div>
-</section>
-
-<!-- ========== FOOTER ========== -->
-<footer class="footer">
-<div class="container">
-<p>&copy; 2025 Angel Yair Ayon Verdugo. Todos los derechos reservados.</p>
-</div>
-</footer>
-
-<!-- Scripts -->
-<script src="js/projects.js"></script>
-<script src="js/main.js"></script>
-</body>
-</html>'''
+    <!-- Scripts -->
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
